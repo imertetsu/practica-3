@@ -1,0 +1,13 @@
+<h4>PRACTICA WIII</h4>
+
+<ul *ngFor="let person of people"
+    [ngSwitch]="person.country">
+
+  <li appMiPrimeraDirectiva *ngSwitchCase="'BO'" style="color:green">{{ person.name }} ({{ person.country }})
+  </li>
+  <li appMiPrimeraDirectiva *ngSwitchCase="'USA'" style="color:red">{{ person.name }} ({{ person.country }})
+  </li> 
+
+  <li appMiPrimeraDirectiva *ngSwitchDefault>{{ person.name }} ({{ person.country }})
+  </li>
+</ul> 
